@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dsapps.androidbrowser.HomeActivity">
+
+    <EditText
+        android:id="@+id/enter_url"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/go_button"
+        android:layout_toLeftOf="@+id/go_button"
+        android:layout_toStartOf="@+id/go_button"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:hint="Search or enter URL" />
+
+    <Button
+        android:id="@+id/go_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Go" />
+
+    <Button
+        android:id="@+id/gmail"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/enter_url"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="166dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Gmail"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gmail"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Facebook"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/quora"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/facebook"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Quora"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/youtube"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gmail"
+        android:layout_alignStart="@+id/gmail"
+        android:layout_below="@+id/gmail"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="@android:color/background_light"
+        android:text="YouTube" />
+
+    <Button
+        android:id="@+id/github"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/youtube"
+        android:layout_alignLeft="@+id/facebook"
+        android:layout_alignStart="@+id/facebook"
+        android:backgroundTint="@android:color/black"
+        android:text="GitHub"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/twitter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/github"
+        android:layout_alignLeft="@+id/quora"
+        android:layout_alignStart="@+id/quora"
+        android:backgroundTint="#c0deed"
+        android:text="Twitter" />
+
+</RelativeLayout>

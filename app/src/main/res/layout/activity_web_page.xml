@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dsapps.androidbrowser.WebPageActivity">
+
+    <EditText
+        android:id="@+id/enter_url_web_page"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/go_button_web_page"
+        android:layout_toLeftOf="@+id/go_button_web_page"
+        android:layout_toStartOf="@+id/go_button_web_page"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:hint="Search or enter URL" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:indeterminate="true"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/enter_url_web_page"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        />
+
+    <Button
+        android:id="@+id/go_button_web_page"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/home_button"
+        android:layout_toStartOf="@+id/home_button"
+        android:background="@drawable/rounded_shape_button_holo_green_dark"
+        android:text="Go" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_shape_button_holo_red_light"
+        android:text="Home" />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_below="@id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+    </WebView>
+
+</RelativeLayout>
